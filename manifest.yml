@@ -1,5 +1,11 @@
 ---
 applications:
- - name: GetStartedNode
-   random-route: true
-   memory: 256M
+- name: GetStartedNode
+  random-route: true
+  memory: 256M
+  disk_quota: 1024M
+  instances: 1
+  host: FRB-GetStartedNode
+  domain: eu-gb.mybluemix.net
+  services:
+  - Cloudant NoSQL DB-FRB
